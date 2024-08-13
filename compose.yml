@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: db-container
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: trip_planner
+      MYSQL_USER: user
+      MYSQL_PASSWORD: root
+    ports:
+      - "3307:3306"
+    networks:
+      - trip-network
+
+  backend:
+    build: ./trip-backend
+    restart: always
+    depends_on:
+      - mysql
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db-container:3306/trip_planner?autoReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
+      SPRING_DATASOURCE_USERNAME: user
+      SPRING_DATASOURCE_PASSWORD: root
+    ports:
+      - "8080:8080"
+    networks:
+      - trip-network
+
+  frontend:
+    image: trip-planner-frontend:0.0.1
+    container_name: frontend-container
+    depends_on:
+      - backend
+    ports:
+      - "3000:80"
+    networks:
+      - trip-network
+
+
+networks:
+  trip-network:
