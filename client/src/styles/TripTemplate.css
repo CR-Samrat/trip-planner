@@ -1,0 +1,143 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .trip-template {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    border: 2px solid #ccc;
+    color: #666;
+    font-size: 15px;
+    height: fit-content;
+    width: 60%;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h2 {
+    color: #4a90e2;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .header-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .info-block {
+    flex: 1;
+    text-align: center;
+    background: #e2e2e2;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  .info-block span {
+    font-weight: bold;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #4a90e2;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .places-foods {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .places, .foods {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .places:last-child, .foods:last-child {
+    margin-right: 0;
+  }
+  
+  .places ol, .foods ol {
+    padding-left: 20px;
+    margin-top: 5px;
+    line-height: 1.6;
+  }
+  
+  .days-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .day-block {
+    flex: 1;
+    background-color: #e2e2e2;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+  
+  .day-block span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .notes, .expenses {
+    flex: 1;
+    background-color: #e2e2e2;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    box-sizing: border-box;
+  }
+  
+  .expenses {
+    text-align: right;
+  }
+  
+  .footer .section-title {
+    font-size: 16px;
+  }
+  
+  .trip-final-div{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .trip-final-div button{
+    padding: 10px 15px;
+    width: 122px;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}

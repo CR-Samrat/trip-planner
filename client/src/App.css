@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: relative;
+}
+
+.App .left{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.TripsContainer{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.trip-selector {
+  /* margin: 20px 10px; */
+  margin: 2em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.trip-selector h2{
+  margin: 20px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.trip-selector label {
+  font-size: 16px;
+  color: #fee;
+  /* margin-bottom: 3px; */
+  font-weight: bold;
+}
+
+.select-day-div{
+  padding-top: 35px;
+}
+
+.select-day-div select{
+  margin: 20px 0;
+}
+
+.trip-selector select {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  border: 2px solid #4a90e2;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+.trip-selector select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+.trip-selector select option {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+}
+
+.create-section .create-button{
+  padding: 1em;
+  background: #5e4ae2c7;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: aliceblue;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}

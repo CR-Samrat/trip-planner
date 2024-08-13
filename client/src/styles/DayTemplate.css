@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.day-template {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 60%;
+    height: fit-content;
+}
+
+.hero-section {
+    padding: 50px;
+    background: linear-gradient(135deg, #6d5bba 0%, #8a82e2 100%);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.timeframes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.timeframe-card {
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.timeframe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.task {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.time {
+    font-size: 16px;
+    color: #777;
+}
+
+.clock-icon {
+    margin-right: 10px;
+    color: #6d5bba;
+}
+
+.day-temp-last-div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.day-temp-last-div button{
+    padding: 10px 15px;
+    width: 122px;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,29 @@
+.default-page-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.default-page-container button{
+    border: 1px dashed black;
+    background-color: #6c5bba00;
+    padding: 20px 30px;
+    border-radius: 5px;
+    /* margin-top: 55px; */
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    letter-spacing: 0.5em;
+}
+
+.default-page-container button:hover{
+    cursor: pointer;
+    background-color: #6d5bba89;
+    border: none;
+}
